@@ -34,10 +34,11 @@ export default function Nav() {
 					</ul>
 					<button
 						style={{ fontSize: 30 }}
+						style={{ color: theme === 'light' ? 'black' : 'white' }}
 						className='btn-clear'
 						onClick={toggleTheme}
 					>
-						{theme === 'light' ? 'Dark' : 'Light'}
+						{theme === 'light' ? '🔦' : '💡'}
 					</button>
 				</nav>
 			)}
