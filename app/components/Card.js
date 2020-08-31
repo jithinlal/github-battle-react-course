@@ -2,7 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ThemeContext from '../contexts/theme';
 
-function Card({ header, subheader, avatar, href, name, children }) {
+export default function Card({
+	header,
+	subheader,
+	avatar,
+	href,
+	name,
+	children,
+}) {
 	const theme = React.useContext(ThemeContext);
 
 	return (

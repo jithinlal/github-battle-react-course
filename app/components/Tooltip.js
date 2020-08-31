@@ -24,7 +24,7 @@ const styles = {
 	},
 };
 
-function Tooltip({ text, children, hovering }) {
+function Tooltip({ text, children }) {
 	const [hovering, attrs] = useHover();
 
 	return (
