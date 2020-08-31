@@ -46,13 +46,13 @@ function PlayerInput({ onSubmit, label }) {
 	const [username, setUsername] = React.useState('');
 	const theme = React.useContext(ThemeContext);
 
-	handleSubmit = (event) => {
+	const handleSubmit = (event) => {
 		event.preventDefault();
 
 		onSubmit(username);
 	};
 
-	handleChange = (event) => {
+	const handleChange = (event) => {
 		setUsername(event.target.value);
 	};
 
